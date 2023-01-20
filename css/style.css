@@ -94,6 +94,42 @@ nav ul li {
     margin-top: 30px;
 }
 
+/* bike card section style */
+.bike-card {
+    padding: 100px;
+}
+
+.bike-card h1 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+}
+
+.bike-card p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #E76F51;
+}
+
+.bike-card hr {
+    width: 60px;
+    margin: 0 auto;
+    color: #E76F51;
+    border: 1px solid #E76F51;
+}
+
+.cards {
+    display: flex;
+    margin-top: 100px;
+}
+
+.card img {
+    width: 100%;
+}
+
 @media screen and (max-width:756px) {
     nav {
         padding: 10px;
