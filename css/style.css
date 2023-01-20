@@ -99,7 +99,8 @@ nav ul li {
     padding: 100px;
 }
 
-.bike-card h1 {
+.bike-card h1,
+.bike-card-part-two h1 {
     font-weight: 600;
     font-size: 48px;
     line-height: 72px;
@@ -122,15 +123,140 @@ nav ul li {
 }
 
 .cards {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     margin-top: 100px;
+    gap: 10px;
 }
 
 .card img {
     width: 100%;
 }
 
-@media screen and (max-width:756px) {
+/* card section tow style */
+.bike-card-part-two {
+    padding: 0 100px;
+}
+
+.new-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.new-card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px gray;
+}
+
+.new-card img {
+    width: 100%;
+}
+
+.new-card-title {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 40px;
+    margin-top: 40px;
+}
+
+.new-card p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #6C6C6C;
+    margin-top: 10px;
+
+}
+
+.card-btn {
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background: #E76F51;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+.author-btn {
+    color: #E76F51;
+    border: 1px solid #E76F51;
+    border-radius: 5px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+}
+
+
+
+/*   clients section  style  */
+
+.clients-section {
+    padding: 100px;
+}
+
+.client-title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+}
+
+.sub-title {
+    color: #E76F51;
+}
+
+@media screen and (max-width:576px) {
+    nav {
+        padding: 10px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .small-nav {
+        display: block;
+
+    }
+
+    .banner-part {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .banner-img {
+        margin-top: 70px;
+    }
+
+    .banner-img img {
+        width: 100%;
+    }
+
+    .banner-blog {
+        margin-top: 45px;
+    }
+
+    /* card section */
+    .cards {
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+    }
+
+    /* new card section */
+    .bike-card-part-two {
+        padding: 0 20px;
+    }
+
+    .new-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:768px) {
     nav {
         padding: 10px;
     }
@@ -155,5 +281,19 @@ nav ul li {
 
     .banner-blog {
         margin-top: 45px;
+    }
+
+    /* card section */
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    /* new card section */
+    .bike-card-part-two {
+        padding: 0 20px;
+    }
+
+    .new-cards {
+        grid-template-columns: 1fr;
     }
 }
