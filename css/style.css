@@ -61,6 +61,14 @@ nav ul li {
     border-radius: 5px;
 }
 
+/* small nav */
+.small-nav {
+    font-size: 35px;
+    color: white;
+    display: none;
+    margin-left: 10px;
+}
+
 /* banner section */
 .banner-part {
     display: flex;
@@ -84,4 +92,32 @@ nav ul li {
 
 .blog-btn {
     margin-top: 30px;
+}
+
+@media screen and (max-width:756px) {
+    nav {
+        padding: 10px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .small-nav {
+        display: block;
+
+    }
+
+    .banner-part {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .banner-img {
+        margin-top: 70px;
+    }
+
+    .banner-blog {
+        margin-top: 45px;
+    }
 }
