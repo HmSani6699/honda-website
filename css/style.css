@@ -290,6 +290,15 @@ nav ul li {
     .new-cards {
         grid-template-columns: 1fr;
     }
+
+    /* clients section */
+    .clients-section {
+        padding: 100px 20px;
+    }
+
+    .clients-profiles {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (min-width:576px) and (max-width:768px) {
@@ -330,6 +339,15 @@ nav ul li {
     }
 
     .new-cards {
+        grid-template-columns: 1fr;
+    }
+
+    /* clients section */
+    .clients-section {
+        padding: 100px 20px;
+    }
+
+    .clients-profiles {
         grid-template-columns: 1fr;
     }
 }
